@@ -72,9 +72,7 @@
         <div class="row">
             <div class="col-6">
                 <div class="card mt-3">
-                    <!-- <div class="card-body"> -->
                     <!--Accordion wrapper-->
-
                     <div class="accordion md-accordion accordion-4" id="accordionEx2" role="tablist"
                         aria-multiselectable="true">
 
@@ -319,12 +317,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Paracetamol End -->
                                 </div>
                             </div>
                         </div>
                         <!-- Accordion card -->
 
-                        <!-- Accordion card -->
+                        <!-- Accordion card EQUIPMENT-->
                         <div class="card">
 
                             <!-- Card header -->
@@ -343,30 +342,156 @@
                             <!-- Card body -->
                             <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11"
                                 data-parent="#accordionEx2">
-                                <div class="card-body rgba-red-strong white-text">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad
-                                        squid. 3
-                                        wolf moon officia aute,
-                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                                        eiusmod. Brunch
-                                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                        nulla assumenda
-                                        shoreditch et.</p>
+                                <div class="card-body rgba-red-strong black-text">
+                                    <!-- Alcohol Card -->
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 my-auto">
+                                                <img src="images/alcohol.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Alcohol</h5>
+                                                    <p class="card-text"> <br>
 
-                                    <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                                        occaecat craft beer
-                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                                        of them
-                                        accusamus labore.</p>
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                            ago</small>
+                                                    </p>
+                                                    <!-- Button trigger modal -->
+                                                    <div class="row">
+                                                        <div class="col my-auto col-auto">
+                                                            <span class="stock">
+                                                                <h5><span class="border-bottom border-danger">260</span>
+                                                                    pcs in stock</h5>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-toggle="modal" data-target="#alcoholModal">
+                                                                Edit
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="alcoholModal" tabindex="-1"
+                                                        role="dialog">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                        Alcohol Stock</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="input-group">
+                                                                        <button class="button-minus form-control"
+                                                                            value="-" data-field="quantity">-</button>
+                                                                        <input type="number"
+                                                                            class="quantity-field form-control" step="1"
+                                                                            min="1" value="260" name="quantity">
+                                                                        <button
+                                                                            class="button-plus form-control bg-warning"
+                                                                            value="+" data-field="quantity">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary"
+                                                                        data-dismiss="modal">Save
+                                                                        changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal End-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Alcohol Card End -->
+                                    <!-- Surgical Mask Card -->
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 my-auto">
+                                                <img src="images/surgical-mask.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Surgical Mask</h5>
+                                                    <p class="card-text"> <br>
+
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                            ago</small>
+                                                    </p>
+                                                    <!-- Button trigger modal -->
+                                                    <div class="row">
+                                                        <div class="col my-auto col-auto">
+                                                            <span class="stock">
+                                                                <h5><span class="border-bottom border-danger">800</span>
+                                                                    pcs in stock</h5>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-toggle="modal" data-target="#surgicalModal">
+                                                                Edit
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="surgicalModal" tabindex="-1"
+                                                        role="dialog">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                        Surgical Mask Stock</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="input-group">
+                                                                        <button class="button-minus form-control"
+                                                                            value="-" data-field="quantity">-</button>
+                                                                        <input type="number"
+                                                                            class="quantity-field form-control" step="1"
+                                                                            min="1" value="800" name="quantity">
+                                                                        <button
+                                                                            class="button-plus form-control bg-warning"
+                                                                            value="+" data-field="quantity">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary"
+                                                                        data-dismiss="modal">Save
+                                                                        changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal End-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Surgical Mask End -->
+
                                 </div>
                             </div>
                         </div>
                         <!-- Accordion card -->
                     </div>
                     <!--/.Accordion wrapper-->
-                    <!-- </div> -->
                 </div>
             </div>
             <!-- Offset is column offset -->
@@ -378,7 +503,7 @@
                     <img class="card-img-top" src="images/random-equipment-resized.jpg">
                 </div>
                 <!-- <div class="card-img-overlay"> -->
-                    <!-- <h5 class="card-title">Card title</h5>
+                <!-- <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.</p>
                     <p class="card-text">Last updated 3 mins ago</p> -->
