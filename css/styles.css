@@ -1,0 +1,40 @@
+body{
+    background-color: #e8f1f2;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+}
+.jumbotron {
+    color: white;
+    background-image: url("../images/banner.png");
+    background-size: cover;
+}
+.jumbotron .display-4{
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
+}
+.bg-white{
+    background-color: white;
+}
+
+.btn-skycross{
+    background-color: #678dc4;
+}
+
+.btn{
+    font-weight: 500;
+}
+
+.navbar{
+    padding: 0;
+}
+/* .navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+  } */
+
+/* Super light blue: #e3f2fd
+Light blue: #7ccbfb
+Skycross blue: #678dc4
+Light Gray 	#e9e8e5
+Gray: #57595a */
