@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+    -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Skycross</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/skycross-logo.png" height="60" class="d-inline-block align-top" alt=""
+                    loading="lazy">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="drugs.html">Drugs</a>
+                    <a class="nav-link" href="equipment.html">Equipment</a>
+                    <a class="nav-link" href="account.html">Account</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4">Search For Drugs</h1>
+            <form class="form-inline d-flex justify-content-center md-form form-sm active-pink-2 mt-2">
+                <input class="form-control mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                <a class="fas fa-search fa-2x" aria-hidden="true" href="#"></a>
+            </form>
+
+            <p class="gray">Trending searches:
+                <span class="hover-blue underline">aspirin</span>,
+                <span class="hover-blue underline">metoprolol</span>,
+                <span class="hover-blue underline">apixaban</span>,
+                <span class="hover-blue underline">lisinopril</span>,
+                <span class="hover-blue underline">gabapentin</span>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card mt-3">
+                    <!-- <div class="card-body"> -->
+                    <!--Accordion wrapper-->
+
+                    <div class="accordion md-accordion accordion-4" id="accordionEx2" role="tablist"
+                        aria-multiselectable="true">
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header z-depth-1 red lighten-4" role="tab" id="heading10">
+                                <a data-toggle="collapse" data-parent="#accordionEx2" href="#collapse10"
+                                    aria-expanded="true" aria-controls="collapse10">
+
+                                    <h2 class="mb-0 white-text font-thin text-uppercase">
+                                        <span>
+                                            Your Drugs
+                                        </span>
+                                        <i class="fas fa-angle-down rotate-icon float-right"></i>
+                                    </h2>
+
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapse10" class="collapse show" role="tabpanel" aria-labelledby="heading10"
+                                data-parent="#accordionEx2">
+                                <div class="card-body rgba-red-strong black-text">
+                                    <!-- Amoxicillin Card -->
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 my-auto">
+                                                <img src="images/amoxicillin.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5 class="card-title">Amoxicillin</h5>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">Amoxycillin (AAN AU) <br>
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 2 mins
+                                                            ago</small>
+                                                    </p>
+                                                    <!-- Button trigger modal -->
+                                                    <div class="row">
+                                                        <div class="col my-auto col-auto">
+                                                            <span class="stock">
+                                                                <h5><span class="border-bottom border-danger">400</span>
+                                                                    pcs in stock</h5>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-toggle="modal" data-target="#amoxicillinModal">
+                                                                Edit
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="amoxicillinModal" tabindex="-1"
+                                                        role="dialog">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                        Amoxicillin Stock</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="input-group">
+                                                                        <button class="button-minus form-control"
+                                                                            value="-" data-field="quantity">-</button>
+                                                                        <input type="number"
+                                                                            class="quantity-field form-control" step="1"
+                                                                            min="1" value="400" name="quantity">
+                                                                        <button
+                                                                            class="button-plus form-control bg-warning"
+                                                                            value="+" data-field="quantity">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary"
+                                                                        data-dismiss="modal">Save
+                                                                        changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal End-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Amoxicillin Card End -->
+                                    <!-- Aspirin Card -->
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 my-auto">
+                                                <img src="images/aspirin.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5 class="card-title">Aspirin</h5>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="card-text">Acetylsalicylic acid <br> 2-Acetoxybenzoic acid
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                            ago</small>
+                                                    </p>
+                                                    <!-- Button trigger modal -->
+                                                    <div class="row">
+                                                        <div class="col my-auto col-auto">
+                                                            <span class="stock">
+                                                                <h5><span class="border-bottom border-danger">300</span>
+                                                                    pcs in stock</h5>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-toggle="modal" data-target="#aspirinModal">
+                                                                Edit
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="aspirinModal" tabindex="-1"
+                                                        role="dialog">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                        Aspirin Stock</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="input-group">
+                                                                        <button class="button-minus form-control"
+                                                                            value="-" data-field="quantity">-</button>
+                                                                        <input type="number"
+                                                                            class="quantity-field form-control" step="1"
+                                                                            min="1" value="300" name="quantity">
+                                                                        <button
+                                                                            class="button-plus form-control bg-warning"
+                                                                            value="+" data-field="quantity">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary"
+                                                                        data-dismiss="modal">Save
+                                                                        changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal End-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Aspirin Card End -->
+                                    <!-- Paracetamol Card -->
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 my-auto">
+                                                <img src="images/paracetamol.jpeg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Paracetamol</h5>
+                                                    <p class="card-text">Acetaminophen <br>
+                                                        n-(4-hydroxyphenyl)ethanamide
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                            ago</small>
+                                                    </p>
+                                                    <!-- Button trigger modal -->
+                                                    <div class="row">
+                                                        <div class="col my-auto col-auto">
+                                                            <span class="stock">
+                                                                <h5><span class="border-bottom border-danger">800</span>
+                                                                    pcs in stock</h5>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-toggle="modal" data-target="#paracetamolModal">
+                                                                Edit
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="paracetamolModal" tabindex="-1"
+                                                        role="dialog">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                        Amoxicillin Stock</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="input-group">
+                                                                        <button class="button-minus form-control"
+                                                                            value="-" data-field="quantity">-</button>
+                                                                        <input type="number"
+                                                                            class="quantity-field form-control" step="1"
+                                                                            min="1" value="800" name="quantity">
+                                                                        <button
+                                                                            class="button-plus form-control bg-warning"
+                                                                            value="+" data-field="quantity">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary"
+                                                                        data-dismiss="modal">Save
+                                                                        changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal End-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header z-depth-1 red lighten-3" role="tab" id="heading11">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2"
+                                    href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    <h2 class="mb-0 white-text font-thin text-uppercase">
+                                        <span>
+                                            Your Equipment
+                                        </span>
+                                        <i class="fas fa-angle-down rotate-icon float-right"></i>
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11"
+                                data-parent="#accordionEx2">
+                                <div class="card-body rgba-red-strong white-text">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad
+                                        squid. 3
+                                        wolf moon officia aute,
+                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                        eiusmod. Brunch
+                                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                        nulla assumenda
+                                        shoreditch et.</p>
+
+                                    <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                        occaecat craft beer
+                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                        of them
+                                        accusamus labore.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                    </div>
+                    <!--/.Accordion wrapper-->
+                    <!-- </div> -->
+                </div>
+            </div>
+            <!-- Offset is column offset -->
+            <div class="col-4 offset-1">
+                <div class="card mt-3 hoverable">
+                    <img class="card-img-top" src="images/random-pills.jpg">
+                </div>
+                <div class="card mt-3 hoverable">
+                    <img class="card-img-top" src="images/random-equipment-resized.jpg">
+                </div>
+                <!-- <div class="card-img-overlay"> -->
+                    <!-- <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p> -->
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <!-- Own JavaScript -->
+        <script type="text/javascript" src="js-scripts/js.js"></script>
+</body>
+
+</html>
