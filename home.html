@@ -72,24 +72,157 @@
         <div class="row">
             <div class="col-6">
                 <div class="card mt-3">
-                    <div class="card-body">
-                        <h2>Your Pharmacy's Drugs</h2>
+                    <!-- <div class="card-body"> -->
+                    <!--Accordion wrapper-->
+
+                    <div class="accordion md-accordion accordion-4" id="accordionEx2" role="tablist"
+                        aria-multiselectable="true">
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header z-depth-1 red lighten-4" role="tab" id="heading10">
+                                <a data-toggle="collapse" data-parent="#accordionEx2" href="#collapse10"
+                                    aria-expanded="true" aria-controls="collapse10">
+
+                                    <h2 class="mb-0 white-text font-thin text-uppercase">
+                                        <span>
+                                            Your Drugs
+                                        </span>
+                                        <i class="fas fa-angle-down rotate-icon float-right"></i>
+                                    </h2>
+
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapse10" class="collapse show" role="tabpanel" aria-labelledby="heading10"
+                                data-parent="#accordionEx2">
+                                <div class="card-body rgba-red-strong black-text">
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 my-auto">
+                                                <img src="images/aspirin.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Aspirin</h5>
+                                                    <p class="card-text">This is a wider card with supporting text below
+                                                        as a natural lead-in to additional content. This content is a
+                                                        little bit longer.
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                            ago</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 my-auto">
+                                                <img src="images/paracetamol.jpeg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Paracetamol</h5>
+                                                    <p class="card-text">This is a wider card with supporting text below
+                                                        as a natural lead-in to additional content. This content is a
+                                                        little bit longer.
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                            ago</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad
+                                        squid. 3
+                                        wolf moon officia aute,
+                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                        eiusmod. Brunch
+                                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                        nulla assumenda
+                                        shoreditch et.</p>
+
+                                    <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                        occaecat craft beer
+                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                        of them
+                                        accusamus labore.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header z-depth-1 red lighten-3" role="tab" id="heading11">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2"
+                                    href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    <h2 class="mb-0 white-text font-thin text-uppercase">
+                                        <span>
+                                            Your Equipment
+                                        </span>
+                                        <i class="fas fa-angle-down rotate-icon float-right"></i>
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11"
+                                data-parent="#accordionEx2">
+                                <div class="card-body rgba-red-strong white-text">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad
+                                        squid. 3
+                                        wolf moon officia aute,
+                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                        eiusmod. Brunch
+                                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                        nulla assumenda
+                                        shoreditch et.</p>
+
+                                    <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                        occaecat craft beer
+                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                        of them
+                                        accusamus labore.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
                     </div>
+                    <!--/.Accordion wrapper-->
+                    <!-- </div> -->
                 </div>
             </div>
-            <div class="col-3 mb-3 col-md-offset-3">
+            <div class="col-4 mb-3 offset-1">
                 <div class="card mt-3">
                     <img class="card-img-top" src="images/random-pills.jpg">
                 </div>
                 <div class="card mt-3">
                     <img class="card-img-top" src="images/random-equipment-resized.jpg">
                 </div>
+                <div class="card-img-overlay">
+                    <!-- <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p> -->
+                </div>
             </div>
 
         </div>
         <div class="row">
-            <div class="col-md-5">aw</div>
-            <div class="col-md-5 col-md-offset-1">aw</div>
+            <div class="col-md-2">aw</div>
+            <div class="col-md-2 offset-3">aw</div>
         </div>
         <!-- JQuery -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
