@@ -1,26 +1,40 @@
+/* Shadow Animation https://tobiasahlin.com/blog/how-to-animate-box-shadow */
+/* CENTER NAVBAR */
 /* .navbar-brand {
     transform: translateX(-50%);
     left: 50%;
     position: relative;
   } */
-
+/* -------------------------------------------------- */
 /* Super light blue: #e3f2fd
 Light blue: #7ccbfb
 Skycross blue: #678dc4
 Light Gray 	#e9e8e5
 Gray: #57595a */
+/* -------------------------------------------------- */
+/* Figma Colors:
+Main Color: #0D81ED
+Secondary Color: #E3EBF2
+Tertiary Color: #F8F8F8
 
-/* Shadow Animation https://tobiasahlin.com/blog/how-to-animate-box-shadow */
+Text & Icon Color: #48555D
+White Text Color: #FFFFFF
+Secondary Text Color: #A9ADB0
+Input Text Color: #000000 */
+/* --------------------------------------------------- */
+
 
 body {
 	background-color: #e8f1f2;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 }
-/* Overloaded style */
-/* .hoverable{
-    transition: all .2s ease-in-out;
-} */
+
+.card-center{
+	padding: 5%;
+	margin: 25%;
+}
+
 .hoverable:hover {
 	transform: scale(1.1);
 }
@@ -77,3 +91,4 @@ body {
 	padding: 0;
 	box-shadow: none;
 }
+

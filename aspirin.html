@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- MD Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/actual-styles.css">
+    <link rel="stylesheet" href="css/sidebar-styles.css">
+    <title>Skycross</title>
+</head>
+
+<body class="bg-white">
+    <div>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="home.html" class="brand-mid"><img src="./images/ic_bird_4.png" height="80" width="80">
+                <span>skycross</span>
+            </a>
+            <a href="home.html" class="a-link"><img src="./images/ic_bird_blue.png" height="40" width="40"> <span
+                    class="active">Inventory</span>
+            </a>
+            <a href="account.html" class="a-link"><img src="./images/ic_bird_blue.png" height="40" width="40">
+                <span>Account</span>
+            </a>
+        </div>
+
+        <!-- Page content -->
+        <div class="main">
+            <div class="container">
+                <div class="section1">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h2>Inventory</h2>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="input-group col">
+                                        <input class="form-control border-white input-search border-right-0"
+                                            type="search" placeholder="Search for aspirin">
+                                        <span class="input-group-append">
+                                            <button
+                                                class="btn btn-outline-secondary input-search border-left-0 border-white"
+                                                type="button">
+                                                <i class="fa fa-search fa-lg"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 label-input" id="please-scroll">
+                        <p>In Stock</p>
+                        <!-- Aspirin Card -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                    <img src="images/aspirin.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="card-title hoverable">Aspirin</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Acetylsalicylic acid <br> 2-Acetoxybenzoic acid
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                ago</small>
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#aspirinModal">
+                                                    View and Edit Stock
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="aspirinModal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                            Aspirin Stock</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="col-12">
+                                                            <form action="#">
+                                                                <div class="row">
+                                                                    <div class="input-group">
+                                                                        <input
+                                                                            class="form-control border-white brand-input-search border-right-0"
+                                                                            type="search"
+                                                                            placeholder="Search brand here">
+                                                                        <span class="input-group-append">
+                                                                            <a href="#.html"
+                                                                                class="btn brand-input-search border-left-0 border-white"
+                                                                                type="button">
+                                                                                <i class="fa fa-search fa-lg"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <p>Generic (No Brand)</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="2050" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Ecotrin</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="420" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Bufferin</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="122" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Aspir 81</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="0" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Fasprin</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="1" value="195" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Aspirin Card End -->
+                    </div>
+                    <div class="col-12 col-md-6 label-input">
+                        <p>Description</p>
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>Aspirin</h2>
+                                        <br>
+                                    </div>
+                                </div>
+                                <img src="images/aspirin.jpg" width="200px">
+                            </div>
+                            <div class="card-body">
+                                <p>Brands: <span class="brands-colored">Ecotrin, Bufferin, Aspir 81,
+                                        Fasprin</span></p>
+                                <p>Drug class(es): platelet aggregation inhibitors, salicylates</p>
+                                <p>Aspirin systemic is used in the treatment of:</p>
+                                <ul>
+                                    <li>Angina</li>
+                                    <li>Angina Pectoris Prophylaxis</li>
+                                    <li>Ankylosing Spondylitis</li>
+                                    <li>Antiphospholipid Syndrome</li>
+                                    <li>Aseptic Necrosis</li>
+                                    <li>Back Pain</li>
+                                    <li>Fever</li>
+                                    <li>Heart Attack</li>
+                                    <li>Ischemic Stroke</li>
+                                    <li>Ischemic Stroke, Prophylaxis</li>
+                                    <li>Juvenile Rheumatoid Arthritis</li>
+                                    <li>Kawasaki Disease</li>
+                                    <li>Myocardial Infarction, Prophylaxis</li>
+                                    <li>Niacin Flush</li>
+                                    <li>Osteoarthritis</li>
+                                    <li>Pain</li>
+                                    <li>Prevention of Thromboembolism in Atrial Fibrillation</li>
+                                    <li>Prosthetic Heart Valves - Thrombosis Prophylaxis</li>
+                                    <li>Prosthetic Heart Valves, Mechanical Valves - Thrombosis Prophylaxis</li>
+                                    <li>Revascularization Procedures, Prophylaxis</li>
+                                    <li>Rheumatic Fever</li>
+                                    <li>Rheumatoid Arthritis</li>
+                                    <li>Sciatica</li>
+                                    <li>Spondyloarthritis</li>
+                                    <li>Systemic Lupus Erythematosus</li>
+                                    <li>Thromboembolic Stroke Prophylaxis</li>
+                                    <li>Transient Ischemic Attack</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Bootstrap JavaScripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!-- Own JavaScript -->
+<script type="text/javascript" src="js-scripts/js.js"></script>
+</body>
+
+</html>

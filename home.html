@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- MD Bootstrap -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/actual-styles.css">
+    <link rel="stylesheet" href="css/sidebar-styles.css">
+    <title>Skycross</title>
+</head>
+
+<body class="bg-white">
+    <div>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="home.html" class="brand-mid"><img src="./images/ic_bird_4.png" height="80" width="80">
+                <span>skycross</span>
+            </a>
+            <a href="home.html" class="a-link"><img src="./images/ic_bird_blue.png" height="40" width="40"> <span
+                    class="active">Inventory</span>
+            </a>
+            <!-- <a href="#" class="a-link"><img src="./images/skycross-logo.png" height="40" width="40"> <span>Your
+                    Store</span>
+            </a> -->
+            <a href="account.html" class="a-link"><img src="./images/ic_bird_blue.png" height="40" width="40">
+                <span>Account</span>
+            </a>
+        </div>
+
+        <!-- Page content -->
+        <div class="main">
+            <div class="container">
+                <div class="section1">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h2>Inventory</h2>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <form action="aspirin.html">
+                                <div class="row">
+                                    <div class="input-group col">
+                                        <input class="form-control border-white input-search border-right-0"
+                                            type="search" placeholder="Search for aspirin">
+                                        <span class="input-group-append">
+                                            <!-- <button
+                                                    class="btn btn-outline-secondary input-search border-left-0 border-white"
+                                                    type="button">
+                                                    <i class="fa fa-search fa-lg"></i>
+                                                </button> -->
+                                            <a href="aspirin.html"
+                                                class="btn btn-outline-secondary input-search border-left-0 border-white"
+                                                type="button">
+                                                <i class="fa fa-search fa-lg"></i>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 label-input" id="please-scroll">
+                        <p>In Stock</p>
+                        <!-- Amoxicillin Card -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                    <img src="images/amoxicillin.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="card-title hoverable">Amoxicillin</h5>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Amoxycillin (AAN AU) <br>
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 2 mins
+                                                ago</small>
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#amoxicillinModal">
+                                                    View and Edit Stock
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="amoxicillinModal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                            Amoxicillin Total Stock per Brand</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="col-12">
+                                                            <form action="#">
+                                                                <div class="row">
+                                                                    <div class="input-group">
+                                                                        <input
+                                                                            class="form-control border-white brand-input-search border-right-0"
+                                                                            type="search"
+                                                                            placeholder="Search brand here">
+                                                                        <span class="input-group-append">
+                                                                            <a href="#.html"
+                                                                                class="btn brand-input-search border-left-0 border-white"
+                                                                                type="button">
+                                                                                <i class="fa fa-search fa-lg"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <br>
+                                                        <p>Generic (No Brand)</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="2050" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Amoxil</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="420" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Moxatag</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="122" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Trimox</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="0" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Apo-Amoxi</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="1" value="195" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Amoxicillin Card End -->
+                        <!-- Aspirin Card -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                    <img src="images/aspirin.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="card-title hoverable">Aspirin</h5>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text">Acetylsalicylic acid <br> 2-Acetoxybenzoic acid
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                ago</small>
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#aspirinModal">
+                                                    View and Edit Stock
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="aspirinModal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                            Aspirin Stock</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="col-12">
+                                                            <form action="#">
+                                                                <div class="row">
+                                                                    <div class="input-group">
+                                                                        <input
+                                                                            class="form-control border-white brand-input-search border-right-0"
+                                                                            type="search"
+                                                                            placeholder="Search brand here">
+                                                                        <span class="input-group-append">
+                                                                            <a href="#.html"
+                                                                                class="btn brand-input-search border-left-0 border-white"
+                                                                                type="button">
+                                                                                <i class="fa fa-search fa-lg"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <br>
+                                                        <p>Generic (No Brand)</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="2050" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Ecotrin</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="420" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Bufferin</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="122" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Aspir 81</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="0" value="0" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                        <p>Fasprin</p>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="1" value="195" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Aspirin Card End -->
+                        <!-- Paracetamol Card -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                    <img src="images/paracetamol.jpeg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title hoverable">Paracetamol</h5>
+                                        <p class="card-text">Acetaminophen <br>
+                                            n-(4-hydroxyphenyl)ethanamide
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                ago</small>
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#paracetamolModal">
+                                                    View and Edit Stock
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="paracetamolModal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                            Paracetamol Stock</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="col-12">
+                                                            <form action="#">
+                                                                <div class="row">
+                                                                    <div class="input-group">
+                                                                        <input
+                                                                            class="form-control border-white brand-input-search border-right-0"
+                                                                            type="search"
+                                                                            placeholder="Search brand here">
+                                                                        <span class="input-group-append">
+                                                                            <a href="#.html"
+                                                                                class="btn brand-input-search border-left-0 border-white"
+                                                                                type="button">
+                                                                                <i class="fa fa-search fa-lg"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <br>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="1" value="800" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Paracetamol End -->
+                        <!-- Filler card 1-->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                    <img src="images/Acetaminophen-Hydrocodone.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title hoverable">Acetaminophen / Hydrocodone</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet blalblbl hi blue entity Lorem
+                                            ipsum dolor sit amet blalblbl hi blue entity
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#acetaminophen-HydrocodonelModal">
+                                                    View and Edit Stock
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Alcohol Card -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                    <img src="images/alcohol.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alcohol</h5>
+                                        <p class="card-text"> <br>
+
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                ago</small>
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#alcoholModal">
+                                                    View and Edit Stock
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="alcoholModal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                            Alcohol Stock</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="col-12">
+                                                            <form action="#">
+                                                                <div class="row">
+                                                                    <div class="input-group">
+                                                                        <input
+                                                                            class="form-control border-white brand-input-search border-right-0"
+                                                                            type="search"
+                                                                            placeholder="Search brand here">
+                                                                        <span class="input-group-append">
+                                                                            <a href="#.html"
+                                                                                class="btn brand-input-search border-left-0 border-white"
+                                                                                type="button">
+                                                                                <i class="fa fa-search fa-lg"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <br>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="1" value="260" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Alcohol Card End -->
+                        <!-- Surgical Mask Card -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 my-auto">
+                                    <img src="images/surgical-mask.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Surgical Mask</h5>
+                                        <p class="card-text"> <br>
+
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                ago</small>
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <div class="row">
+
+                                            <div class="col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#surgicalModal">
+                                                    View and Edit Stock
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="surgicalModal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                            Surgical Mask Stock</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="col-12">
+                                                            <form action="#">
+                                                                <div class="row">
+                                                                    <div class="input-group">
+                                                                        <input
+                                                                            class="form-control border-white brand-input-search border-right-0"
+                                                                            type="search"
+                                                                            placeholder="Search brand here">
+                                                                        <span class="input-group-append">
+                                                                            <a href="#.html"
+                                                                                class="btn brand-input-search border-left-0 border-white"
+                                                                                type="button">
+                                                                                <i class="fa fa-search fa-lg"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <br>
+                                                        <div class="input-group">
+                                                            <button class="button-minus form-control" value="-"
+                                                                data-field="quantity">-</button>
+                                                            <input type="number" class="quantity-field form-control"
+                                                                step="1" min="1" value="800" name="quantity">
+                                                            <button class="button-plus form-control bg-warning"
+                                                                value="+" data-field="quantity">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 label-input" id="please-scroll">
+                        <p>Description</p>
+                        <div class="card">
+                            <div class="card-header bg-white">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>Amoxicillin</h2>
+                                        <h2>Amoxycillin (AAN AU)</h2>
+                                    </div>
+                                </div>
+                                <img src="images/amoxicillin.jpg" width="200px">
+                            </div>
+                            <div class="card-body">
+                                <p>Brands: <span class="brands-colored">Amoxil, Moxatag, Trimox, Apo-Amoxi</span></p>
+                                <p>Drug class(es): aminopenicillins</p>
+                                <p>Amoxicillin systemic is used in the treatment of:</p>
+                                <ul>
+                                    <li>Actinomycosis</li>
+                                    <li>Anthrax Prophylaxis</li>
+                                    <li>Bacterial Endocarditis Prevention</li>
+                                    <li>Bacterial Infection</li>
+                                    <li>Bladder Infection</li>
+                                    <li>Bronchiectasis</li>
+                                    <li>Bronchitis</li>
+                                    <li>Chlamydia Infection</li>
+                                    <li>Cutaneous Bacillus anthracis</li>
+                                    <li>Dental Abscess</li>
+                                    <li>Helicobacter Pylori Infection</li>
+                                    <li>Lyme Disease, Arthritis</li>
+                                    <li>Lyme Disease, Carditis</li>
+                                    <li>Lyme Disease, Erythema Chronicum Migrans</li>
+                                    <li>Lyme Disease, Neurologic</li>
+                                    <li>Otitis Media</li>
+                                    <li>Pneumonia</li>
+                                    <li>Sinusitis</li>
+                                    <li>Skin or Soft Tissue Infection</li>
+                                    <li>Spleen Removal</li>
+                                    <li>Tonsillitis/Pharyngitis</li>
+                                    <li>Upper Respiratory Tract Infection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Bootstrap JavaScripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!-- Own JavaScript -->
+<script type="text/javascript" src="js-scripts/js.js"></script>
+</body>
+
+</html>

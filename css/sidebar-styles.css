@@ -1,0 +1,98 @@
+/* -------------------------------------------------- */
+/* Figma Colors:
+Main Color: #0D81ED
+Secondary Color: #E3EBF2
+Tertiary Color: #F8F8F8
+
+Text & Icon Color: #48555D
+White Text Color: #FFFFFF
+Secondary Text Color: #A9ADB0
+Input Text Color: #000000 */
+/* --------------------------------------------------- */
+
+/* The sidebar menu */
+.sidenav {
+	height: 100%;
+	width: 400px; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #e3ebf2; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+	border-radius: 0px 20px 20px 0px;
+	box-shadow: black;
+}
+
+/* The navigation menu links */
+.sidenav span {
+	margin-left: 5%;
+}
+
+.brand-mid {
+	padding: 6px 8px 6px 60px;
+	margin-top: 10%;
+	margin-bottom: 15%;
+	font-family: "Raleway", sans-serif;
+	font-weight: 800;
+	font-size: 2.5rem;
+	color: #48555d;
+	display: block;
+}
+.a-link {
+	padding: 10px 8px 20px 60px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.7rem;
+	text-decoration: none;
+	color: #48555d;
+	display: block;
+}
+
+.active {
+	color: #0d81ed;
+	font-weight: 700;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #0d81ed;
+	text-decoration: none;
+}
+/* END OF SIDEBAR MENU----------------------------------------------------------- */
+
+/* Style page content */
+
+.main {
+	/* margin-left same as the width of the sidebar */
+	margin-left: 400px;
+	padding: 4% 3%;
+}
+
+.container {
+	padding: 0;
+    margin: 0;
+    
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.sidenav{
+		width: 300px;
+	}
+	.main {
+		/* margin-left same as the width of the sidebar */
+		margin-left: 300px;
+		padding: 4% 3%;
+	}
+}
