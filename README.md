@@ -1,7 +1,7 @@
 # Front end for Skycross Pharmacy
 
-<https://blue-entity-technologies.github.io/Skycross/pharmacy-portal>
+<https://paolotormon.github.io/Skycross>
 
-Note: Some functionalities don't work because the data/backend is in another repository.
+Note: Backend in another repo
 
 ## For testing, login works with ANY credentials
