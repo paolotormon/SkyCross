@@ -1,6 +1,6 @@
 # Front end for Skycross Pharmacy
 
-<https://paolotormon.github.io/Skycross>
+<https://paolotormon.github.io/SkyCross>
 ![](https://github.com/paolotormon/SkyCross/blob/master/images/skycross.gif)
 
 Note: 
